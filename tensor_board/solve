@@ -1,0 +1,5 @@
+我试了试总结如下：
+1.我用TensorFlow 1.1.0版本会出现not found 404之类的错误，所以换成1.0版本（我是配合python35）可以避免该问题，
+2.假设生成的log文件为A.log，位置是 G：\path1\path2\A.log，那么path1和path2都不能有中文
+3.生成log文件后，首先在cmd中cd到 G:\path1\path2，然后 tensorboard --logdir=G:\path1\path2
+然后我的就没问题了。。真是要折腾死我。。
